@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>测试1</title>
+
+
+ <script >
+function test1(){
+//alert("测试1");
+
+ android.toast("测试调用java方法");
+
+}
+function test2(){
+//alert("测试1");
+
+ var name = android.getName();
+ alert("name = "+name);
+
+}
+
+function test3(name){
+//alert("测试1");
+
+ alert("name = "+name);
+
+}
+ </script>
+</head>
+<body>
+ <h1>测试页面1</h1>
+
+ <a href="javascript:test1()">js调用java方法</a><br/><br/>
+ <a href="javascript:test2()">获取返回值</a>
+
+
+</body>
+
+</html>
